@@ -12,3 +12,6 @@ MatchAnalysisNoOpt.exe : MatchAnalysis.fs
 
 MatchAnalysis.exe : MatchAnalysis.fs
 	$(monorun) $(fscc) $(fsharpcOpts) MatchAnalysis.fs
+
+clean :
+	rm -f *.exe test.txt
